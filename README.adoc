@@ -1,0 +1,17 @@
+= Multiple Transaction Manager For SCT Demo
+
+== Build
+mvn clean install -DskipTests
+
+== Execute
+Make sure that the following properties for the H2 DB are present
+
+```
+spring.datasource.db-hqhb-task.datasource.driverClassName=org.h2.Driver
+spring.datasource.db-hqhb-task.jdbcUrl=jdbc:h2:mem:testdb\DB_CLOSE_ON_EXIT\=FALSE;spring.datasource.db-hqhb-task.datasource.driverClassName=org.h2.Driver
+```
+
+To execute:
+```
+java -jar target/tdemo-1.0.0.BUILD-SNAPSHOT.jar
+```
